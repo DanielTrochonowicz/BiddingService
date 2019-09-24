@@ -11,6 +11,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<nav th:replace="fragments/mainNav :: mainNav"></nav>
+
+<div th:replace="fragments/menu :: menu"></div>
+
+<header th:replace="fragments/slider :: slider"></header>
+
 <div class="container">
     <div class="row">
         <div class="col">
@@ -48,8 +54,9 @@
 </table>
 <div>
     <a th:href="@{/page-main}">
-        <button type="button" class="btn btn-pill btn-primary">Przejdź do strony głównej</button>
+        <button type="button" class="btn btn-outline-secondary">Przejdź do strony głównej</button>
     </a>
 </div>
+<footer th:replace="fragments/footerMenu :: footerMenu"></footer>
 </body>
 </html>
