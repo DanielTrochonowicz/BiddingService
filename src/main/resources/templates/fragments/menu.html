@@ -1,0 +1,38 @@
+<div th:fragment="menu" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div  class="wrapper">
+        <div class="nav nav2 ">
+            <ol class="textNavCenter">
+                <li class="minWidth"><a th:href="@{/page-main}">STRONA GŁÓWNA</a></li>
+                <li class="minWidth"><a href="">PLAYSTATION</a>
+                    <ul class="navFont">
+                        <li><a th:href="@{/panel/ps3}">PLAYSTATION 3</a></li>
+                        <li><a th:href="@{/panel/ps4}">PLAYSTATION 4</a></li>
+                        <li><a th:href="@{/panel/akcesoriaIkonsolePs}">KONSOLE I AKCESORIA</a></li>
+                    </ul>
+                </li>
+                <li class="minWidth"><a href="">XBOX</a>
+                    <ul class="navFont">
+                        <li><a th:href="@{/panel/xbox360}">XBOX 360</a></li>
+                        <li><a th:href="@{/panel/xboxOne}">XBOX ONE</a></li>
+                        <li><a th:href="@{/panel/akcesoriaIkonsoleXbox}">KONSOLE I AKCESORIA</a></li>
+                    </ul>
+                </li>
+                <li class="minWidth"><a href="">NINTENDO</a>
+                    <ul class="navFont">
+                        <li><a th:href="@{/panel/nintendoSwitch}">NINTENDO SWITCH</a></li>
+                        <li><a th:href="@{/panel/nintendoWiiU}">NINTENDO WII U</a></li>
+                        <li><a th:href="@{/panel/nintendoWii}">NINTENDO WII</a></li>
+                        <li><a th:href="@{/panel/nintendoDs-3Ds}">NINTENDO DS / 3DS</a></li>
+                        <li><a th:href="@{/panel/akcesoriaIkonsoleNintendo}">KONSOLE I AKCESORIA</a></li>
+                    </ul>
+                </li>
+                <li class="minWidth"><a href="">PC</a>
+                    <ul class="navFont">
+                        <li><a th:href="@{/panel/pc}">PC</a></li>
+                        <li><a th:href="@{/panel/akcesoriaPc}">AKCESORIA</a></li>
+                    </ul>
+                <li class="minWidth"><a th:href="@{/panel/przedsprzedaż}">PRZEDSPRZEDAŻ</a></li>
+            </ol>
+        </div>
+    </div>
+</div>

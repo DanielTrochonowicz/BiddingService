@@ -1,0 +1,31 @@
+<nav th:fragment="mainNav" class="navbar navbar-light bg-light" xmlns:th="">
+
+        <span class="navbar-brand mb-0 h1 shadowText" style="color: #a84d99">ShopGame.com</span>
+
+    <form th:action="@{/page-main}" method="post" class="form-inline">
+        <div class="form-group mb-2">
+            <input class="form-control" type="search" name="searchText" placeholder="Szukaj" aria-label="Search"></div>
+        <div class="form-group mx-sm-3 mb-2">
+            <button class="btn btn-outline-secondary btn-rounded waves-effect" type="submit">Szukaj</button>
+        </div>
+    </form>
+<!--        <div class="basket">-->
+<!--            <img src="/img/basket.jpg" alt="basket" class="basketImg">-->
+<!--        </div>-->
+    <div class=" marginTopBoxBooks ">
+        <div  class="wrapper">
+            <div class="nav nav2 ">
+                <ol class="textNavCenter">
+                    <li class="menu"><a href="" >Menu</a>
+                        <ul class="navFont">
+                            <li><a th:href="@{/panel-basket}">Koszyk</a></li>
+                            <li><a th:href="@{/panel-login}">Zaloguj się</a></li>
+                            <li><a th:href="@{/logout}">Wyloguj się</a></li>
+                            <li><a th:href="@{/panel-registration}">Zarejestruj się</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</nav>

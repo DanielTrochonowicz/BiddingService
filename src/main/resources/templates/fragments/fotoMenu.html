@@ -1,0 +1,31 @@
+<div th:fragment="fotoMenu" class="container itemCenterBox" xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="row itemCenterFoto">
+        <div th:each="product : ${products}">
+            <div class="col-md-2 marI">
+                <div class="ribbon ribbon--bestseller">"TOP"</div>
+                <div class="item-box itemCenterFoto">
+                    <div class="item itemCenterFoto">
+                        <div class="itemDetails text">
+                            <a th:href="@{'/product-detail?id=' + ${product.id}}">
+                                <img th:src="${'/img/' + product.img}" class="productImg"/>
+                                <input type="hidden" th:value="${product.id}" id="id" name="id">
+                            </a>
+                        </div>
+                        <div th:text="${product.name}" class="title"></div>
+                    </div>
+                    <form th:method="post" th:action="@{/panel-basket}" th:object="${product}">
+                            <button type="submit" class="btn btn-sm btn-outline-warning waves-effect text marT">
+                                Dodaj do
+                                koszyka
+                            </button>
+                            <input type="hidden" th:value="${product.id}" name="id">
+                  </form>
+                    <form th:method="post" th:action="@{/panel-basket}" th:object="${product}">
+                        <div th:text="${product.price}" class="cena2">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

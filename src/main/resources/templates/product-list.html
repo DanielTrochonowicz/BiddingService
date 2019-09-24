@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <script type='text/javascript' src='/js/bootstrap.min.js'></script>
+</head>
+<body>
+<h3 style="color: #a84d99">Lista produktów</h3>
+<form th:action="@{/admin/product-list}" method="post">
+    <div>
+        <input type="text" name="searchText" class="btn btn-outline-primary btn-sm">
+        <select type="select" name="searchParameter" class="btn btn-outline-primary btn-sm">
+            <option value="id">Id</option>
+            <option value="name">Nazwa</option>
+            <option value="description">Opis</option>
+            <option value="quantity">Ilość</option>
+            <option value="price">Cena</option>
+            <option value="value">Wartość</option>
+        </select>
+        <input type="submit" value="Szukaj" class="btn btn-outline-primary btn-sm">
+    </div>
+</form>
+<table>
+    <tr>
+        <td class="border">Id</td>
+        <td class="border">Nazwa</td>
+        <td class="border">Opis</td>
+        <td class="border">Ilość</td>
+        <td class="border">Cena</td>
+        <td class="border">Wartość</td>
+    </tr>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.id}" class="border"></td>
+        <td th:text="${product.name}" class="border"></td>
+        <td th:text="${product.description}" class="border"></td>
+        <td th:text="${product.quantity}" class="border"></td>
+        <td th:text="${product.price}" class="border"></td>
+        <td th:text="${product.totalValue}" class="border"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="border">Podsumowanie</td>
+        <td></td>
+        <td th:text="${#aggregates.sum(products.![totalValue])}"/>
+        <td th:each="product : ${products}" >
+        </td>
+    </tr>
+    </td>
+</table>
+   <a th:href="@{/admin/create-product}">
+            <button type="button" class="btn btn-outline-success">Dodaj produkt</button>
+    </a>
+    <div>
+        <a th:href="@{/page-main}">
+            <button type="button" class="btn btn-outline-secondary">Przejdź do strony głównej</button>
+        </a>
+        <a th:href="@{/admin/panel-admin}">
+            <button type="button" class="btn btn-outline-secondary">Przejdz do panelu admina</button>
+        </a>
+    </div>
+</body>
+</html>

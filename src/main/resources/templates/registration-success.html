@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title class="titlebar">Aukcja</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a th:href="@{/page-main}">
+        <span class="navbar-brand mb-0 h1 shadowText" style="color: #a84d99"> ShopGame.com
+        </span>
+    </a>
+    <h1 class="section-header text" style="color: #a84d99">Rejestracja powiodła się</h1>
+</nav>
+<div class="containerRsuccess">
+    <div class="row">
+        <div class="col">
+            <h5 style="color: #a84d99">Konto użytkownika</h5>
+        </div>
+    </div>
+        <table class="table">
+            <tr>
+                <td>
+                    <span th:text="${user.firstName}" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span th:text="${user.lastName}" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span th:text="${user.email}" />
+                </td>
+            </tr>
+<!--            <tr>-->
+<!--                <td>-->
+<!--                    <span th:text="${user.password}" />-->
+<!--                </td>-->
+<!--            </tr>-->
+    </table>
+    <td >
+        <a th:href="@{/page-main}" ><button type="button" class="btn btn-outline-secondary">Powrót do menu głównego</button></a>
+    </td>
+</div>
+<footer th:replace="fragments/footerMenu :: footerMenu"></footer>
+</body>
+</html>

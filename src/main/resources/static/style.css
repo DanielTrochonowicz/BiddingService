@@ -1,0 +1,515 @@
+header {
+    min-width:90%;
+    width: 90%;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 3% auto;
+    object-fit: cover;
+    text-align:center;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: tahoma, sans-serif;
+    text-shadow: 0 0 6px white;
+}
+
+.slider{
+    min-width:80%;
+    max-width:90%;
+    text-align:center;
+    object-fit: contain;}
+
+
+.buttonRight{
+    float: right;
+}
+.buttonLeft{
+    float: left;
+}
+
+.navbar-mix{
+    background: #cfbebe;
+}
+.marNav-left{
+    margin-left: 150px;
+}
+.bg-mix{
+    background: #cab6b6;
+}
+
+
+.containerRsuccess{
+    height: 50%;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 20%;
+    text-align: left;
+    position:relative;
+}
+.item{
+    width: 90%;
+    height: 61%;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+}
+
+.item-box{
+    width: 180px;
+    height: 330px;
+    margin: 2px;
+    padding: 10px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+}
+.item:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    box-shadow:  0 0 30px #A8A8A8;
+    background-color: #ffffff;
+}
+.item-box:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    box-shadow:  0 0 30px #A8A8A8;
+    background-color: #ffffff;
+}
+.text {
+    text-align: center;
+}
+
+.itemCenterFoto {
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+.productImg {
+    width:100%;
+    height: 200px;
+    position: center;
+}
+
+.text-right {
+    margin: 5px;
+    text-align: right;
+}
+
+.ribbon{
+    font-size: 12px;
+    height: 20px;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px 0 10px;
+    white-space: nowrap;
+}
+.ribbon:after {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+.ribbon--bestseller{
+    background: #12ade4;
+}
+.ribbon--bestseller:after {
+    border-left-color: #12ade4;
+    border-top-color: #12ade4;
+}
+.ribbon, .ribbon:hover{
+    color: #ffffff;
+}
+:after{
+    box-sizing: border-box;
+}
+
+.cena {
+    text-align: right;
+}
+.marT{
+    margin-top: 80px;
+}
+.marI{
+    margin-top: 20px;
+}
+.cena2 {
+    text-align: right;
+    margin-top: auto;
+    color: #ff6000;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    bottom: 0px;
+}
+
+.kup_cena {
+    position: absolute;
+    top: 213px;
+    right: 0px;
+}
+.title {
+    text-align: center;
+    color: crimson;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.textNavCenter{
+    text-align: center;
+}
+.dol{
+    position: absolute;
+    float: left;
+    bottom: 0px;
+    text-align: right;
+}
+
+.wrapper {
+    width: 100%;
+}
+.nav {
+    width: auto;
+    padding: 10px 0;
+    background-color: #bda4a4;
+    text-align: center;
+    font-weight: 500;
+}
+.nav2{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.basket{
+    position: relative;
+}
+
+.basketImg  {
+    display: block;
+    width: 35%;
+    position:relative;
+    top: -5px;
+    left:2%;
+}
+
+ol {
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol a{
+    color: #a84d99;
+    text-decoration: none;
+    display: block;
+}
+
+ol > li{
+    float: left;
+    width: auto;
+    padding: 0 15px;
+    height: 40px;
+}
+
+ol > li:hover {
+    background-color: rgb(236, 238, 238);
+}
+
+ol > li:hover > a {
+    color: #96d885;
+}
+
+ol > li > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+
+ol > li:hover > ul {
+    display: block;
+}
+
+ol > li > ul > li {
+    background-color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    z-index: 100;
+    border-top: 1px solid #a84d99;
+}
+
+ol > li > ul > li:hover {
+    background-color: rgb(236, 238, 238);
+}
+
+ol > li > ul > li:hover > a {
+    color: #96d885;
+}
+
+.menu{
+display:block;
+min-width: 180px;
+}
+
+.minWidth{
+min-width:auto;
+font-size:1rem;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#container {
+    min-height:100%;
+    text-align: center;
+    position:relative;
+}
+
+.containerBasket{
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.containerLogin{
+    height: 60%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.containerRegistration{
+
+    text-align: center;
+    margin-top: 40px;
+}
+.Errors{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+    background:#b5fbbd;
+}
+#middle {
+    padding:10px;
+    padding-bottom:60px;
+}
+
+#panel {
+    width: 350px;
+    margin: 0 auto;
+    padding: 15px 0 0;
+    background: #fff;
+    border: 1px solid #a84d99;
+    font: 16px calibri;
+    letter-spacing: -1px;
+    -webkit-box-shadow: 0 0 2px #a84d99;
+    -moz-box-shadow: 0 0 2px #a84d99;
+    box-shadow: 0 0 2px #a84d99;
+}
+
+#email, #password, #lastName, #firstName {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 5px;
+    border: 1px solid #a84d99;
+    outline: 1px solid #a84d99;
+    font-size: 15px;
+}
+
+#email:focus, #password:focus, #lastName:focus, #firstName:focus {
+    outline: 1px solid #a84d99;
+}
+
+/*#lower {*/
+/*    background: #ecf2f5;*/
+/*    width: 360px;*/
+/*    padding: 5px 20px;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+.check {
+    display: inline;
+    float: none;
+    font-size: 11px;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    width: 70px;
+    padding: 5px 13px;
+    border: 1px solid #85577d;
+    color: white;
+    text-shadow: 0 0 1px black;
+    background: #98c9dc;
+    position: relative;
+    left: 180px;
+}
+
+.check {
+    display: inline;
+    float: none;
+    font-size: 11px;
+    padding: 5px;
+}
+input[type="submit"] {
+    width: 70px;
+    padding: 5px 13px;
+    border: 1px solid #005f85;
+    color: white;
+    text-shadow: 0 0 1px black;
+    background: #98c9dc;
+    position: relative;
+    left: 180px;
+}
+
+#panel, input[type="submit"] {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#panel, input[type="submit"] {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}

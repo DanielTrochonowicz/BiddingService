@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title class="titlebar">Login</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <a th:href="@{/page-main}">
+        <span class="navbar-brand mb-0 h1 shadowText" style="color: #a84d99"> ShopGame.com
+        </span>
+    </a>
+    <div class=" marginTopBoxBooks ">
+        <div  class="wrapper">
+            <div class="nav nav2 ">
+                <ol class="textNavCenter">
+                    <li class="menu"><a href="" >Menu</a>
+                        <ul class="navFont">
+                            <li><a th:href="@{/page-main}">Strona główna</a></li>
+                            <li><a th:href="@{/panel-basket}">Koszyk</a></li>
+                            <li><a th:href="@{/panel-login}">Zaloguj się</a></li>
+                            <li><a th:href="@{/logout}">Wyloguj się</a></li>
+                            <li><a th:href="@{/panel-registration}">Zarejestruj się</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <h1 class="section-header text" style="color: #a84d99">Login</h1>
+</nav>
+<div class="containerLogin">
+    <div id="panel">
+        <fieldset class="borderRegistration">
+            <form th:action="@{/logowanie}" method="post" th:object="${user}">
+                <div th:if="${param.error}">
+                    <div class="alert alert-danger">
+                        Invalid username or password.
+                    </div>
+                </div>
+                <div th:if="${param.logout}">
+                    <div class="alert alert-info">
+                        You have been logged out.
+                    </div>
+                </div>
+                <div style="color: #a84d99">Email:</div>
+                <input name="email" id="email" type="email" email="email" placeholder="Email" autocomplete="on"><br>
+                <div style="color: #a84d99">Hasło:</div>
+                <input name="password" id="password" type="password" password="password" placeholder="Hasło" autocomplete="on" ><br>
+                <p><a href="#">Zapomniałeś hasła?</a></p>
+                <td class="p">
+                    <input id="checkbox" name="remember-me" class="check" type="checkbox"><label class="check" for="checkbox">Zapamiętaj mnie!</label>
+                    <button class="btn btn-outline-success buttonTopLogin" type="submit" value="Submit">Zaloguj się</button>
+                </td>
+            </form>
+        </fieldset>
+        <fieldset class="borderRegistration">
+            <tr class="br brRight brLef">
+                <td>
+                    <a th:href="@{/panel-registration}">
+                    <button type="button" class="btn btn-outline-secondary">Utwórz nowe konto</button>
+                    </a>
+                </td>
+            </tr>
+        </fieldset>
+    </div>
+</div>
+<footer th:replace="fragments/footerMenu :: footerMenu"></footer>
+</body>
+</html>
