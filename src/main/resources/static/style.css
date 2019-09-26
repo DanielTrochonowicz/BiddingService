@@ -9,6 +9,7 @@ header {
     text-align:center;
 }
 
+
 h1 {
     position: absolute;
     top: 50%;
@@ -431,6 +432,9 @@ html, body {
 /*    margin-top: 20px;*/
 /*}*/
 
+.padDetail{
+    padding-top: 150px;
+}
 .check {
     display: inline;
     float: none;

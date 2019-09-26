@@ -41,7 +41,7 @@
     <tr>
 <!--        <td class="border">Id</td>-->
         <td class="border">Nazwa</td>
-        <td class="border">Opis</td>
+<!--        <td class="border">Opis</td>-->
         <td class="border">Ilość</td>
         <td class="border">Cena</td>
         <td class="border">Wartość</td>
@@ -49,13 +49,19 @@
     <tr th:each="product : ${products}">
 <!--        <td th:text="${product.id}" class="border"></td>-->
         <td th:text="${product.name}" class="border"></td>
-        <td th:text="${product.description}" class="border"></td>
+<!--        <td th:text="${product.description}" class="border"></td>-->
         <td th:text="${product.quantity}" class="border"></td>
         <td th:text="${product.price}" class="border"></td>
         <td th:text="${product.totalValue}" class="border"></td>
     </tr>
+<!--    <tr>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
+<!--        <td class="border">Podsumowanie</td>-->
+<!--        <td th:text="${#aggregates.sum(products.![totalValue])}"/>-->
+<!--        </td>-->
+<!--    </tr>-->
 </table>
-
 
 <div>
     <a th:href="@{/page-main}">

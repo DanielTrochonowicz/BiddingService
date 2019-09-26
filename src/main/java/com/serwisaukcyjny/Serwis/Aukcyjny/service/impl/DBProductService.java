@@ -45,15 +45,15 @@ public class DBProductService {
         productRepository.save(new Product(19L, "ps4","Need For Speed: Payback","Need For Speed: Payback", BigDecimal.valueOf(158.00),1,true, "7.jpg"));
         productRepository.save(new Product(20L, "ps4","Diablo 3 - Eternal Collection","Diablo 3 - Eternal Collection", BigDecimal.valueOf(109.00),1,false, "6.jpg"));
         productRepository.save(new Product(21L, "ps4","Minecraft","Minecraft", BigDecimal.valueOf(115.99),1,false, "13.jpg"));
-        productRepository.save(new Product(22L, "ps4","Wiedźmin 3: Dziki Gon","Wiedźmin 3: Dziki Gon", BigDecimal.valueOf(157.00),1,true, "5.jpg"));
+        productRepository.save(new Product(22L, "ps4","Wiedzmin 3: Dziki Gon","Wiedzmin 3: Dziki Gon", BigDecimal.valueOf(157.00),1,true, "5.jpg"));
         productRepository.save(new Product(23L, "ps4","Dragon Ball Z: Kakarot","Dragon Ball Z: Kakarot", BigDecimal.valueOf(269.99),1,false, "15.jpg"));
         productRepository.save(new Product(24L, "ps4","Marvel's Avengers","Marvel's Avengers", BigDecimal.valueOf(132.00),1,true, "1.jpg"));
         productRepository.save(new Product(25L, "ps4","The Yakuza: Remastered","The Yakuza: Remastered", BigDecimal.valueOf(239.00),1,false, "11.jpg"));
         productRepository.save(new Product(26L, "ps4","Overwatch ","Overwatch ", BigDecimal.valueOf(109.00),1,false, "13.jpg"));
         productRepository.save(new Product(27L, "ps4","eFootball PES 2020","eFootball PES 2020", BigDecimal.valueOf(269.00),1,false, "4.jpg"));
-        productRepository.save(new Product(28L, "ps4","PlayStation Network - 50 zł","PlayStation Network - 50 zł", BigDecimal.valueOf(50.00),1,true, "11.jpg"));
-        productRepository.save(new Product(29L, "ps4","PlayStation Plus - 12 miesięcy","PlayStation Plus - 12 miesięcy", BigDecimal.valueOf(240.00),1,true, "10.jpg"));
-        productRepository.save(new Product(30L, "ps4","PlayStation Plus - 3 miesiące","PlayStation Plus - 3 miesiące", BigDecimal.valueOf(100.00),1,false, "12.jpg"));
+        productRepository.save(new Product(28L, "ps4","PlayStation Network - 50 zl","PlayStation Network - 50 zl", BigDecimal.valueOf(50.00),1,true, "11.jpg"));
+        productRepository.save(new Product(29L, "ps4","PlayStation Plus - 12 miesiecy","PlayStation Plus - 12 miesiecy", BigDecimal.valueOf(240.00),1,true, "10.jpg"));
+        productRepository.save(new Product(30L, "ps4","PlayStation Plus - 3 miesiace","PlayStation Plus - 3 miesiace", BigDecimal.valueOf(100.00),1,false, "12.jpg"));
 
 
         productRepository.save(new Product(31L, "akcesoriaIkonsolePs","Konsola SONY PlayStation 4 Pro, 1 TB","Konsola SONY PlayStation 4 Pro, 1 TB", BigDecimal.valueOf(2360.00),1,false, "17.jpg"));
@@ -100,7 +100,7 @@ public class DBProductService {
         productRepository.save(new Product(69L, "xboxOne","Need for Speed: Heat","Need for Speed: Heat", BigDecimal.valueOf(244.99),1,false, "69.jpg"));
 
         productRepository.save(new Product(70L, "nintendoSwitch","Spyro Reignited Trilogy","Spyro Reignited Trilogy", BigDecimal.valueOf(164.99),1,true,"70.jpg"));
-        productRepository.save(new Product(71L, "nintendoSwitch","Wiedźmin 3: Dziki Gon","Wiedźmin 3: Dziki Gon", BigDecimal.valueOf(249.99),1,true,"71.jpg"));
+        productRepository.save(new Product(71L, "nintendoSwitch","Wiedzmin 3: Dziki Gon","Wiedzmin 3: Dziki Gon", BigDecimal.valueOf(249.99),1,true,"71.jpg"));
         productRepository.save(new Product(72L, "nintendoSwitch","FIFA 20","FIFA 20", BigDecimal.valueOf(169.99),1,false, "72.jpg"));
         productRepository.save(new Product(73L, "nintendoSwitch","Darksiders II - Deathinitive Edition","Darksiders II - Deathinitive Edition", BigDecimal.valueOf(119.99),1,true, "73.jpg"));
         productRepository.save(new Product(74L, "nintendoSwitch","LEGO Gwiezdne Wojny: Skywalker","LEGO Gwiezdne Wojny: Skywalker", BigDecimal.valueOf(230.00),1,false, "74.jpg"));
@@ -157,7 +157,7 @@ public class DBProductService {
         productRepository.save(new Product(121L, "nintendoDs-3Ds","The Legend of Zelda Spirit Tracks","The Legend of Zelda Spirit Tracks", BigDecimal.valueOf(30.00),1,false, "121.jpg"));
         productRepository.save(new Product(122L, "nintendoDs-3Ds","Yoshi's Island NDS","Yoshi's Island NDS", BigDecimal.valueOf(69.99),1,false, "122.jpg"));
         productRepository.save(new Product(123L, "nintendoDs-3Ds","Dragon Ball Z Goku Densetsu NDS ","Dragon Ball Z Goku Densetsu NDS ", BigDecimal.valueOf(69.99),1,false, "123.jpg"));
-        productRepository.save(new Product(124L, "nintendoDs-3Ds","Harvest Moon DS używana NDS","Harvest Moon DS używana NDS", BigDecimal.valueOf(71.99),1,false, "124.jpg"));
+        productRepository.save(new Product(124L, "nintendoDs-3Ds","Harvest Moon DS uzywana NDS","Harvest Moon DS uzywana NDS", BigDecimal.valueOf(71.99),1,false, "124.jpg"));
         productRepository.save(new Product(125L, "nintendoDs-3Ds","Pokemon White Version NDS","Pokemon White Version NDS", BigDecimal.valueOf(60.99),1,false, "125.jpg"));
         productRepository.save(new Product(126L, "nintendoDs-3Ds","The Legend of Zelda Phantom Hourglass NDS","The Legend of Zelda Phantom Hourglass NDS", BigDecimal.valueOf(49.99),1,false, "126.jpg"));
         productRepository.save(new Product(127L, "nintendoDs-3Ds","New Super Mario Bros NDS ","New Super Mario Bros NDS", BigDecimal.valueOf(59.99),1,false, "127.jpg"));
@@ -176,7 +176,7 @@ public class DBProductService {
         productRepository.save(new Product(139L, "pc","Overwatch","Overwatch", BigDecimal.valueOf(161.99),1,true, "139.jpg"));
         productRepository.save(new Product(140L, "pc","Far Cry 5","Far Cry 5", BigDecimal.valueOf(105.99),1,true, "140.jpg"));
         productRepository.save(new Product(141L, "pc","Grand Theft Auto V","Grand Theft Auto V", BigDecimal.valueOf(149.99),1,false, "141.jpg"));
-        productRepository.save(new Product(142L, "pc","Wiedźmin 3","Wiedźmin 3", BigDecimal.valueOf(159.99),1,false, "142.jpg"));
+        productRepository.save(new Product(142L, "pc","Wiedzmin 3","Wiedzmin 3", BigDecimal.valueOf(159.99),1,false, "142.jpg"));
         productRepository.save(new Product(143L, "pc","Need for Speed: Payback","Need for Speed: Payback", BigDecimal.valueOf(59.99),1,false, "143.jpg"));
         productRepository.save(new Product(144L, "pc","South Park: The Fractured But Whole","South Park: The Fractured But Whole", BigDecimal.valueOf(79.99),1,false, "144.jpg"));
         productRepository.save(new Product(145L, "pc","Need For Speed","Need For Speed", BigDecimal.valueOf(69.99),1,true, "145.jpg"));
