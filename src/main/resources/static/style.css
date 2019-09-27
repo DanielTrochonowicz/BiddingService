@@ -517,15 +517,3 @@ input[type="submit"] {
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
 }
-/*@media (min-width:300px){.container{max-width:260px}}*/
-/*@media (min-width:360px){.container{max-width:300px}}*/
-/*@media (min-width:576px){.container{max-width:540px}}*/
-/*@media (min-width:768px){.container{max-width:720px}}*/
-/*@media (min-width:992px){.container{max-width:960px}}*/
-/*@media (min-width:1200px){.container{max-width:1160px}}*/
-
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-}
