@@ -424,14 +424,6 @@ html, body {
 #email:focus, #password:focus, #lastName:focus, #firstName:focus {
     outline: 1px solid #a84d99;
 }
-
-/*#lower {*/
-/*    background: #ecf2f5;*/
-/*    width: 360px;*/
-/*    padding: 5px 20px;*/
-/*    margin-top: 20px;*/
-/*}*/
-
 .padDetail{
     padding-top: 150px;
 }
