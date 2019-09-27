@@ -39,17 +39,13 @@
 <h3 class="section-header text" style="color: #a84d99">WYBRANE PRODUKTY</h3>
 <table class="table">
     <tr>
-<!--        <td class="border">Id</td>-->
         <td class="border">Nazwa</td>
-<!--        <td class="border">Opis</td>-->
         <td class="border">Ilość</td>
         <td class="border">Cena</td>
         <td class="border">Wartość</td>
     </tr>
     <tr th:each="product : ${products}">
-<!--        <td th:text="${product.id}" class="border"></td>-->
         <td th:text="${product.name}" class="border"></td>
-<!--        <td th:text="${product.description}" class="border"></td>-->
         <td th:text="${product.quantity}" class="border"></td>
         <td th:text="${product.price}" class="border"></td>
         <td th:text="${product.totalValue}" class="border"></td>
@@ -58,7 +54,8 @@
 <!--        <td></td>-->
 <!--        <td></td>-->
 <!--        <td class="border">Podsumowanie</td>-->
-<!--        <td th:text="${#aggregates.sum(products.![totalValue])}"/>-->
+<!--        <td th:text="${#aggregates.sum(products![totalValue])}"/>-->
+<!--        <td th:each="product : ${products}" >-->
 <!--        </td>-->
 <!--    </tr>-->
 </table>
