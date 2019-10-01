@@ -3,8 +3,10 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+
 @Entity
 public class Auction {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

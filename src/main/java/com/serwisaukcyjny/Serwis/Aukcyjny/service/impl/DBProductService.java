@@ -182,7 +182,6 @@ public class DBProductService {
         productRepository.save(new Product(145L, "pc","Need For Speed","Need For Speed", BigDecimal.valueOf(69.99),1,true, "145.jpg"));
         productRepository.save(new Product(146L, "pc","Plants vs Zombies: Garden Warfare 2","Plants vs Zombies: Garden Warfare 2", BigDecimal.valueOf(129.99),1,true, "146.jpg"));
 
-
         productRepository.save(new Product(147L, "przedsprzedaż","Need For Speed","Need For Speed", BigDecimal.valueOf(69.99),1,false, "145.jpg"));
         productRepository.save(new Product(148L, "przedsprzedaż","Far Cry 5","Far Cry 5", BigDecimal.valueOf(105.99),1,false, "140.jpg"));
         productRepository.save(new Product(149L, "przedsprzedaż","Diablo 3","Diablo 3", BigDecimal.valueOf(79.99),1,false, "138.jpg"));
@@ -198,7 +197,6 @@ public class DBProductService {
         productRepository.save(new Product(159L, "przedsprzedaż","Plants vs. Zombies: Bitwa o Neighborville","Plants vs. Zombies: Bitwa o Neighborville", BigDecimal.valueOf(139.99),1,false, "64.jpg"));
         productRepository.save(new Product(160L, "przedsprzedaż","Crash Team Racing: Nitro-Fueled","Crash Team Racing: Nitro-Fueled", BigDecimal.valueOf(169.99),1,false, "75.jpg"));
         productRepository.save(new Product(161L, "przedsprzedaż","NBA 2K20","NBA 2K20", BigDecimal.valueOf(244.99),1,false, "84.jpg"));
-
 
     }
 }
